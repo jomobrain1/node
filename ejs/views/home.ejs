@@ -1,0 +1,24 @@
+<!-- including file -->
+<%- include('partials/header') %>
+
+
+    <h1>Home</h1>
+    <h3>Developer Details</h3>
+    <p><%= developer.name %></p>
+    <p><%= developer.email %></p>
+    <p><%= developer.salary %></p>
+    <p><%= developer.phone %></p>
+
+    <% if(developer.salary > 60000) { %>
+        <h3>Above 60000</h3>
+    <% } else { %>
+        <h4>Below pay</h4>
+    <% } %>
+    <hr>
+    <h3>For Loop is  Written Here </h3>
+    <% for(i=0;i<10;i++) { %>
+        <p> <%= i %> </p>
+    <% } %>
+
+
+    <%- include('partials/footer') %>
